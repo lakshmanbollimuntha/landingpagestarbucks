@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StarBucks Landing Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Roboto+Condensed:wght@300&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just coffee<br>It's <span>Starbucks</h2>
+                <p>Starbucks originally opened in Seattle, Washington, on March 30, 1971.[10] By selling high-quality coffee beans and equipments related, Starbucks became a local coffee bean retailer for the first ten years in Seattle.[11] It was founded by business partners Jerry Baldwin, Zev Siegl and Gordon Bowker who first met as students at the University of San Francisco:[12] The trio were inspired to sell high-quality coffee beans </p>
+                <a href=""> learn more..</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png">
+            </div>
+        </div>
+        <ul class="thumb">                
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            const starbucksImage = document.querySelector('.imgBox img');
+            starbucksImage.src = anything;
+        }
+    
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
